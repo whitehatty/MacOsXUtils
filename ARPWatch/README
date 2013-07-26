@@ -1,0 +1,9 @@
+HOWTO use the script:
+
+1 - copy ARPWatch.sh in /Application
+
+2 - start the agent:
+	launchctl load ARPWatch.plist
+
+3 - stop the agent:
+	launchctl unload ARPWatch.plist
