@@ -9,7 +9,7 @@
 	<string>com.wordpress.whitehatty.ARPWatch</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Application/ARPWatch.sh</string>
+		<string>/Applications/ARPWatch.sh</string>
 	</array>
 	<key>StartInterval</key>
 	<integer>60</integer>
