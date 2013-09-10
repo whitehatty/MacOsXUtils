@@ -23,4 +23,5 @@ DUP=$(arp -an | awk '{print $4}' | sort | uniq -c | grep -v ' 1 ' | wc -l)
 if [ "$DG_MAC" != $(cat /tmp/ARPWatch) -o $DUP -ge 1 ] 
 then
 	logger -i -p user.warn -t ARPWatch "### WARNING ### Potential ARP Poisoning"
+	logger -i -p user.warn -t ARPWatch "$DUP"
 fi
